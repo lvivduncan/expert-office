@@ -39,19 +39,23 @@
 
 {
     const button = document.querySelector('#button')
-    // const menu = document.querySelector('#menu')
-    const body = document.querySelector('body')
+    const mobile = document.querySelector('#menu-mobile')
 
     button.addEventListener('click', () => {
-        // menu.classList.add('active')
-
-        body.className = 'active'
+        mobile.className = 'active'
     })
 
+    mobile.addEventListener('click', () => {
+        mobile.className = ''
+    })
 
-}
+    const menuLinks = mobile.querySelectorAll('a')
 
-{
+    for(const link of menuLinks) {
+        link.addEventListener("click", clickHandler)
+    }
+
+    // smooth menu
     const links = document.querySelectorAll("#menu a")
 
     for (const link of links) {

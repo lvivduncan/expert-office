@@ -22,6 +22,7 @@
     --cyan: #c0cfe3;
     --cyan-dark: rgba(30, 87, 153, 0.4);
     --cyan-dark-dark: rgba(30, 87, 153, 0.6);
+    --cyan-dark-dark-dark: rgba(30, 87, 153, 0.8);
     /* --black: #000; */
 }
 
@@ -70,30 +71,6 @@ a:hover
 body 
 {
     background: linear-gradient(to bottom,  rgba(30,87,153,0.1) 0%,rgba(255,255,255,0.56) 51%,rgba(255,255,255,1) 100%);
-    position: relative;
-}
-
-body.active
-{
-    
-}
-
-body::after
-{
-    content: '';
-    display: none;
-}
-
-body.active::after 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    background: var(--cyan);
-    display: block;
 }
 
 strong,
@@ -194,7 +171,6 @@ img
 
 .header-fixed #logo img
 {
-    /* height: 70px!important; */
     width: 167px;
     height: 70px;
 }
@@ -261,27 +237,6 @@ nav a.form
     padding: 5px 10px;
 }
 
-/* mobile menu */
-body.active #menu
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 3;
-    background: var(--cyan);
-}
-
-body.active #menu a
-{
-    color: var(--white)
-}
-
-
 #button
 {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23006634" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>');
@@ -301,6 +256,38 @@ body.active #menu a
         gap: var(--gap);
         justify-content: end;
     }
+}
+
+#menu-mobile
+{
+    display: none;
+}
+
+#menu-mobile.active
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: var(--cyan);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+#menu-mobile.active::after
+{
+    content: '';
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="%23fff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>');
+    width: 30px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
 }
 
 #main
@@ -372,7 +359,6 @@ main
 {
     main 
     {
-        /* margin: var(--gap) auto; */
         margin: 0 auto;
     }    
 }
@@ -382,7 +368,6 @@ main p:last-child
     margin: 0;
 }
 
-/*  */
 #about-add
 {
     margin: var(--gap) auto 0;
@@ -580,15 +565,7 @@ main p:last-child
 {
     #partners
     {
-        grid-template-columns: repeat(2,1fr);
-    } 
-}
-
-@media(max-width: 420px)
-{
-    #partners
-    {
-        grid-template-columns: 1fr
+        display: block;
     } 
 }
 
@@ -623,16 +600,26 @@ main p:last-child
 {
     text-align: center;
     padding: var(--gap);
-    color: var(--cyan-dark-dark);
+    color: var(--cyan-dark-dark-dark);
     display: flex;
     align-items: center;
     font-style: italic;
     margin: 0;
 }
 
+@media(max-width: 520px)
+{
+    #partners p 
+    {
+        display: block;
+        margin: 0 0 var(--gap);
+        padding: 0;
+    }
+}
+
 #partners p a 
 {
-    color: var(--cyan-dark)
+    color: var(--cyan-dark-dark-dark)
 }
 
 #partners p a:hover 
@@ -708,6 +695,11 @@ main p:last-child
     border: 1px solid var(--cyan);
     outline: none;
     resize: none;
+}
+
+#form textarea 
+{
+    height: 120px;
 }
 
 #form input[type='button'] 
@@ -822,6 +814,7 @@ main p:last-child
 {
     transform: translateY(-5px);
 }
+
 /* https://github.com/lvivduncan/levus-up */
 #levus-up
 {
@@ -840,6 +833,3 @@ main p:last-child
 {    
     visibility: visible;
 }
-
-
-
