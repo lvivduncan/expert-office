@@ -320,21 +320,40 @@ nav a.form
     }
 }
 
-    #about img 
-    {
-        position: relative;
-        top: var(--backdown);
-         width: 100%;
-        /*height: auto; */
-        border-radius: var(--gap);
-    } 
+#about img 
+{
+    position: relative;
+    top: var(--backdown);
+    width: 100%;
+    border-radius: var(--gap);
+}
+
+#myCarousel
+{
+    position: relative;
+    top: var(--backdown);
+    /* --f-carousel-slide-height: 80%; */
+    --f-carousel-spacing: 10px;
+    
+    /* height: 80%; */
+}
+
+#myCarousel img 
+{
+    border-radius: var(--gap);        
+}
+
+.f-carousel__viewport
+{
+    border-radius: var(--gap);
+}
 
 @media(max-width: 776px)
 {
-    #about img 
+    /* #about img 
     {
         position: static;
-    }    
+    }     */
 }
 
 main 

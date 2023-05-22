@@ -6,16 +6,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="expert office">
    <title>expert office</title>
+   <link rel="stylesheet" href="css/carousel.css">
    <link rel="stylesheet" href="css/styles.css">
    <link rel="icon" type="image/png" href="icons/favicon.png">
-
 </head>
 <body>
    <header id="header">
       <div class="wrapper">
-         <a href="#header" id="logo" title="expert office">
+         <span id="logo">
             <img src="images/logo.png" alt="expert office">
-         </a>
+         </span>
          <nav id="menu">
             <a href="#main">Компанія</a>
             <a href="#service">Послуги</a>
@@ -29,11 +29,24 @@
 
       <div class="wrapper" id="main">
          <section id="about">
-            <figure class="wow fadeIn" data-wow-delay="0.5s">
-               <img src="https://fastly.picsum.photos/id/2/480/355.jpg?hmac=D9PBHTb9KtXQXVAs4HZ8G6dit4V1CXJ_QUCRfpzjYOE" width="480" height="355" alt="">
-               
-            </figure>
-            <main class="wow fadeIn" data-wow-delay="0.5s">
+            <!-- <div id="carousel"> -->
+               <div class="f-carousel" id="myCarousel">
+                  <div class="f-carousel__slide">
+                     <img src="https://fastly.picsum.photos/id/2/480/355.jpg?hmac=D9PBHTb9KtXQXVAs4HZ8G6dit4V1CXJ_QUCRfpzjYOE" alt="">
+                  </div>
+                  <div class="f-carousel__slide">
+                     <img src="https://fastly.picsum.photos/id/2/480/355.jpg?hmac=D9PBHTb9KtXQXVAs4HZ8G6dit4V1CXJ_QUCRfpzjYOE" alt="">
+                  </div>
+                  <div class="f-carousel__slide">
+                     <img src="https://fastly.picsum.photos/id/2/480/355.jpg?hmac=D9PBHTb9KtXQXVAs4HZ8G6dit4V1CXJ_QUCRfpzjYOE" alt="">
+                  </div>
+                  <!-- </div>                    -->
+            </div>
+            <!-- <figure class="wow fadeIn" data-wow-delay=".5s"> -->
+               <!-- <img src="https://fastly.picsum.photos/id/2/480/355.jpg?hmac=D9PBHTb9KtXQXVAs4HZ8G6dit4V1CXJ_QUCRfpzjYOE" width="480" height="355" alt=""> -->
+
+            <!-- </figure> -->
+            <main class="wow fadeIn" data-wow-delay=".5s">
                <h1>Офісний центр «Експерт»</h1>
                <p>Розташований у Франківському районі міста Львова по вул. Сахарова, 42.</p>
                <p>Зручне розташування будинку по відношенню до історичного та ділового центру міста та основних транспортних розв’язок робить наш центр зручним для ведення будь-якого виду діяльності.</p>
@@ -43,11 +56,11 @@
          </section>
 
          <section id="about-add">
-               <div class="wow fadeIn" data-wow-delay="0.5s"><p>Загальна функціональна площа <strong>бізнес центру «Експерту»</strong> — 7000 кв.м., де розташовано офіси різної площі та конфігурації, які відповідають усім вимогам, що пред'являються до офісних центрів такого рівня.</p></div>
+               <div class="wow fadeIn" data-wow-delay=".5s"><p>Загальна функціональна площа <strong>бізнес центру «Експерту»</strong> — 7000 кв.м., де розташовано офіси різної площі та конфігурації, які відповідають усім вимогам, що пред'являються до офісних центрів такого рівня.</p></div>
 
-               <div class="wow fadeIn" data-wow-delay="1s"><p>Співробітники <strong>бізнес центру «Експерт»</strong> готові надати своїм партнерам послуги щодо розв'язання юридичних, технічних, рекламно-інформаційних та інших завдань. За бажанням клієнтів можливо перепланування офісів з урахуванням функціональних та дизайнерських рішень замовника.</p></div>
+               <div class="wow fadeIn" data-wow-delay=".5s"><p>Співробітники <strong>бізнес центру «Експерт»</strong> готові надати своїм партнерам послуги щодо розв'язання юридичних, технічних, рекламно-інформаційних та інших завдань. За бажанням клієнтів можливо перепланування офісів з урахуванням функціональних та дизайнерських рішень замовника.</p></div>
 
-               <div class="wow fadeIn" data-wow-delay="1s"><p>Приміщення, що пропонуються в нашому офісному центрі, Ви можете орендувати вже починаючи з 20м2. Планування приміщення, рівень оздоблення, дизайн, може бути виконаний виходячи з ваших бажань і пропозицій в найкоротші терміни. Можливі варіанти обладнання приміщення офісними меблями з підведенням необхідних комунікацій до робочих місць.</p></div>
+               <div class="wow fadeIn" data-wow-delay=".5s"><p>Приміщення, що пропонуються в нашому офісному центрі, Ви можете орендувати вже починаючи з 20м2. Планування приміщення, рівень оздоблення, дизайн, може бути виконаний виходячи з ваших бажань і пропозицій в найкоротші терміни. Можливі варіанти обладнання приміщення офісними меблями з підведенням необхідних комунікацій до робочих місць.</p></div>
          </section>    
       </div>
 
@@ -104,32 +117,32 @@
    </section>   
 
    <section id="partners">
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Правове бюро «НВК Груп»</p>
-      <p class="wow fadeIn" data-wow-delay="1s"><a target="_blank" href="//hotel-ekotel.lviv.ua/" title="www.hotel-ekotel.lviv.ua">ТзОВ «Екотель»</a></p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Декорус»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «ТВК»Краківець»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Компанія «Еней»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Поні Експрес»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Балтік фінанси Груп»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ПП «Мега – Вест»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">Комунальне підприємство «Адміністративно-технічне управління»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ПП «Азбука світу»</p>
-      <p class="wow fadeIn" data-wow-delay="1s"><a target="_blank" href="//expertbrok.com.ua/finansovi-poslugi" title="www.expertbrok.com.ua">ТзОВ «Кредитний брокер «Експерт»</a></p>
-      <p class="wow fadeIn" data-wow-delay="1s"><a target="_blank" href="//expertbrok.com.ua/strakhuvannya" title="www.expertbrok.com.ua">ТзОВ «Страховий брокер «Експерт»</a></p>
-      <p class="wow fadeIn" data-wow-delay="1s"><a target="_blank" href="//www.alfakom.com.ua/" title="www.alfakom.com.ua">ТзОВ «Альфа–Ком»</a></p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Максимум-Капітал»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ ДКК «Український реєстратор»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ПП «Бюро правових послуг «Інтромісія»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Гаванічні технології»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">Почесний консул Нідерландів</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ПІК «ААЗ Трейдінг Ко»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Алюфініш Україна»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">СУНП ТзОВ «Інфоком» ЛФ</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Науково-виробничий центр «АМС»</p>
-      <p class="wow fadeIn" data-wow-delay="1s">ТзОВ «Інтерфарб-Україна»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Правове бюро «НВК Груп»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s"><a target="_blank" href="//hotel-ekotel.lviv.ua/" title="www.hotel-ekotel.lviv.ua">ТзОВ «Екотель»</a></p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Декорус»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «ТВК»Краківець»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Компанія «Еней»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Поні Експрес»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Балтік фінанси Груп»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ПП «Мега – Вест»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">Комунальне підприємство «Адміністративно-технічне управління»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ПП «Азбука світу»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s"><a target="_blank" href="//expertbrok.com.ua/finansovi-poslugi" title="www.expertbrok.com.ua">ТзОВ «Кредитний брокер «Експерт»</a></p>
+      <p class="wow fadeIn" data-wow-delay=".5s"><a target="_blank" href="//expertbrok.com.ua/strakhuvannya" title="www.expertbrok.com.ua">ТзОВ «Страховий брокер «Експерт»</a></p>
+      <p class="wow fadeIn" data-wow-delay=".5s"><a target="_blank" href="//www.alfakom.com.ua/" title="www.alfakom.com.ua">ТзОВ «Альфа–Ком»</a></p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Максимум-Капітал»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ ДКК «Український реєстратор»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ПП «Бюро правових послуг «Інтромісія»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Гаванічні технології»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">Почесний консул Нідерландів</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ПІК «ААЗ Трейдінг Ко»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Алюфініш Україна»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">СУНП ТзОВ «Інфоком» ЛФ</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Науково-виробничий центр «АМС»</p>
+      <p class="wow fadeIn" data-wow-delay=".5s">ТзОВ «Інтерфарб-Україна»</p>
    </section>
 
-   <section id="form" class="wow fadeIn" data-wow-delay="1s">
+   <section id="form" class="wow fadeIn" data-wow-delay=".5s">
       <h1>Заповніть форму, ми Вам перетелефонуємо</h1>
       <form>
          <p><span>Ваше ім'я:</span> <input type="text"></p>
@@ -139,7 +152,7 @@
       </form>
    </section>
 
-   <footer id="footer" class="wow fadeIn" data-wow-delay="1s">
+   <footer id="footer" class="wow fadeIn" data-wow-delay=".5s">
       <div class="wrapper">
          <img src="images/logo.png" width="250" height="105" alt="expert office">
          <div>
@@ -163,6 +176,7 @@
       <a href="#form" class="form">Заповнити анкету</a>
       <a href="#footer">Контакти</a>
    </nav>
+   <script src="js/carousel.umd.js"></script>
    <script src="js/script.js"></script>
 </body>
 </html>
