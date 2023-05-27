@@ -85,6 +85,6 @@ new WOW().init()
 // fancybox carousel
 
 const container = document.getElementById("myCarousel");
-const options = { infinite: false };
+const options = { infinite: true };
 
 new Carousel(container, options);

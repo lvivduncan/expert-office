@@ -334,8 +334,6 @@ nav a.form
     top: var(--backdown);
     /* --f-carousel-slide-height: 80%; */
     --f-carousel-spacing: 10px;
-    
-    /* height: 80%; */
 }
 
 #myCarousel img 
@@ -778,7 +776,7 @@ main p:last-child
 
 #footer p 
 {
-    margin: 0 0 5px;
+    margin: 0
 }
 
 #footer ul 
@@ -794,6 +792,7 @@ main p:last-child
     {
         flex-direction: column;
         align-items: flex-end;
+        gap: calc(var(--gap) / 2)
     }    
 }
 
