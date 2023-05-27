@@ -851,3 +851,33 @@ main p:last-child
 {    
     visibility: visible;
 }
+
+#send
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    padding: calc(var(--gap)*2) var(--gap) var(--gap);
+    overflow-y: scroll;
+    visibility: hidden;
+}
+
+#send.active
+{
+    z-index: 5;
+    visibility: visible;
+}
+
+#send-wrapper
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 6;
+    background: rgba(0,0,0,.5);
+}
