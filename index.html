@@ -144,11 +144,12 @@
 
    <section id="form" class="wow fadeIn" data-wow-delay=".5s">
       <h1>Заповніть форму, ми Вам перетелефонуємо</h1>
-      <form>
-         <p><span>Ваше ім'я:</span> <input type="text"></p>
-         <p><span>Телефон:</span> <input type="phone"></p>
-         <p><span>Примітка:</span> <textarea name="" id="" cols="30" rows="10"></textarea></p>
-         <input type="button" value="Надіслати">
+      <em>Усі поля обов'язкові до заповнення</em>
+      <form method="post">
+         <p><span>Ваше ім'я:</span> <input type="text" id="form-name"></p>
+         <p><span>Телефон:</span> <input type="phone" id="form-phone"></p>
+         <p><span>Примітка:</span> <textarea cols="30" rows="10" id="form-message" placeholder="Коли до Вас зателефонувати?"></textarea></p>
+         <input type="submit" value="Надіслати">
       </form>
    </section>
 
@@ -170,6 +171,8 @@
          </div> 
       </div>
    </footer>
+
+   <!-- мобільне меню -->
    <nav id="menu-mobile">
       <a href="#main">Компанія</a>
       <a href="#service">Послуги</a>
@@ -177,6 +180,10 @@
       <a href="#form" class="form">Заповнити анкету</a>
       <a href="#footer">Контакти</a>
    </nav>
+
+   <!-- блок нотіса відправки -->
+   <!-- <div id="send-wrapper"></div> -->
+
    <script src="js/carousel.umd.js"></script>
    <script src="js/script.js"></script>
 </body>

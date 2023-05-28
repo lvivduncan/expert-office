@@ -674,6 +674,13 @@ main p:last-child
     font-size: 20px;
 }
 
+#form em 
+{
+    display: block;
+    margin: 0 auto var(--gap);
+    text-align: center;
+}
+
 #form p 
 {
     display: grid;
@@ -708,10 +715,11 @@ main p:last-child
 #form input[type="phone"],
 #form textarea
 {
-    padding: calc(var(--gap) / 2) var(--gap);
+    padding: calc(var(--gap) / 2);
     border: 1px solid var(--cyan);
     outline: none;
     resize: none;
+    font-size: 12px;
 }
 
 #form textarea 
@@ -719,7 +727,7 @@ main p:last-child
     height: 120px;
 }
 
-#form input[type='button'] 
+#form input[type='submit'] 
 {
     cursor: pointer;
     background: var(--red);
@@ -846,38 +854,38 @@ main p:last-child
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23006634' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='16 12 12 8 8 12'%3E%3C/polyline%3E%3Cline x1='12' y1='16' x2='12' y2='8'%3E%3C/line%3E%3C/svg%3E");
 }
 
-
 #levus-up.active
 {    
     visibility: visible;
 }
 
-#send
+#send-wrapper
 {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
-    padding: calc(var(--gap)*2) var(--gap) var(--gap);
-    overflow-y: scroll;
+    z-index: 6;
+    background: rgba(0,0,0,.7);
     visibility: hidden;
+    transition: .5s;
 }
 
-#send.active
+#send-wrapper.active
 {
-    z-index: 5;
     visibility: visible;
 }
 
-#send-wrapper
+#send
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 6;
-    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 50%;
+    left: calc(50% - 130px);
+    padding: var(--gap);
+    width: 260px;
+    background: var(--white);
+    text-align: center;
+    border: 1px solid var(--cyan);
+    border-radius: var(--gap);
 }
